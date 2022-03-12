@@ -14,7 +14,7 @@ class NewContactViewController: UIViewController {
     @IBOutlet weak var surnameTF: UITextField!
     
     var fullName: String {
-        "\(firstNameTF.text ?? "") \(surnameTF.text ?? "")"
+        "\(firstNameTF.text) \(surnameTF.text)"
     }
     
     var delegate:ContactListDelegate!
@@ -24,8 +24,11 @@ class NewContactViewController: UIViewController {
     }
     @IBAction func saveButton() {
         
-        delegate.saveUser(fullName: fullName)
-        StorageManager.shared.save(value: fullName)
+        guard let firstName = firstNameTF.text else { return }
+        guard let surname = surnameTF.text else { return }
+        let contact = Contact(firstName: firstName, surname: surname)
+        delegate.saveUser(value: contact)
+        StorageManager.shared.save(value: contact)
         
         self.navigationController?.popViewController(animated: true)
     }

@@ -8,12 +8,12 @@
 import UIKit
 
 protocol ContactListDelegate {
-    func saveUser(fullName: String)
+    func saveUser(value: Contact)
 }
 
 class ContactListViewController: UIViewController {
 
-    var contacts:[String] = []
+    var contacts:[Contact] = []
     
     @IBOutlet weak var tableView: UITableView!
         
@@ -42,7 +42,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellUser", for: indexPath) as! ContactTableViewCell
-        cell.fullName.text = contacts[indexPath.row]
+        cell.fullName.text = contacts[indexPath.row].fullName
         
         return cell
     }
@@ -58,8 +58,8 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
 }
 
 extension ContactListViewController: ContactListDelegate {
-    func saveUser(fullName: String) {
-        contacts.append(fullName)
+    func saveUser(value: Contact) {
+        contacts.append(value)
         tableView.reloadData()
     }
     

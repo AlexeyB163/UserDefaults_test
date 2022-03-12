@@ -17,7 +17,7 @@ class StorageManager {
    private init () {}
     
     
-    func save(value: String) {
+    func save(value: Contact) {
         var contacts = fetchContact()
         contacts.append(value)
         userDefaults.set(contacts, forKey: key)

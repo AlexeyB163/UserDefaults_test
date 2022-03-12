@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CE884CDD27DCF8B500513A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CDC27DCF8B500513A73 /* AppDelegate.swift */; };
 		CE884CDF27DCF8B500513A73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CDE27DCF8B500513A73 /* SceneDelegate.swift */; };
-		CE884CE127DCF8B500513A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CE027DCF8B500513A73 /* ViewController.swift */; };
+		CE884CE127DCF8B500513A73 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CE027DCF8B500513A73 /* ContactListViewController.swift */; };
 		CE884CE427DCF8B500513A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE884CE227DCF8B500513A73 /* Main.storyboard */; };
 		CE884CE627DCF8B600513A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE884CE527DCF8B600513A73 /* Assets.xcassets */; };
 		CE884CE927DCF8B600513A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE884CE727DCF8B600513A73 /* LaunchScreen.storyboard */; };
+		CE884CF127DCFF3500513A73 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF027DCFF3500513A73 /* ContactTableViewCell.swift */; };
+		CE884CF327DD000900513A73 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF227DD000900513A73 /* NewContactViewController.swift */; };
+		CE884CF527DD029E00513A73 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF427DD029E00513A73 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE884CD927DCF8B500513A73 /* UserDefaults_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDefaults_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE884CDC27DCF8B500513A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE884CDE27DCF8B500513A73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE884CE027DCF8B500513A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE884CE027DCF8B500513A73 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		CE884CE327DCF8B500513A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE884CE527DCF8B600513A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE884CE827DCF8B600513A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE884CEA27DCF8B600513A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE884CF027DCFF3500513A73 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		CE884CF227DD000900513A73 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
+		CE884CF427DD029E00513A73 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				CE884CDC27DCF8B500513A73 /* AppDelegate.swift */,
+				CE884CF027DCFF3500513A73 /* ContactTableViewCell.swift */,
 				CE884CDE27DCF8B500513A73 /* SceneDelegate.swift */,
-				CE884CE027DCF8B500513A73 /* ViewController.swift */,
+				CE884CE027DCF8B500513A73 /* ContactListViewController.swift */,
+				CE884CF227DD000900513A73 /* NewContactViewController.swift */,
+				CE884CF427DD029E00513A73 /* Model.swift */,
 				CE884CE227DCF8B500513A73 /* Main.storyboard */,
 				CE884CE527DCF8B600513A73 /* Assets.xcassets */,
 				CE884CE727DCF8B600513A73 /* LaunchScreen.storyboard */,
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE884CE127DCF8B500513A73 /* ViewController.swift in Sources */,
+				CE884CF127DCFF3500513A73 /* ContactTableViewCell.swift in Sources */,
+				CE884CF327DD000900513A73 /* NewContactViewController.swift in Sources */,
+				CE884CE127DCF8B500513A73 /* ContactListViewController.swift in Sources */,
+				CE884CF527DD029E00513A73 /* Model.swift in Sources */,
 				CE884CDD27DCF8B500513A73 /* AppDelegate.swift in Sources */,
 				CE884CDF27DCF8B500513A73 /* SceneDelegate.swift in Sources */,
 			);

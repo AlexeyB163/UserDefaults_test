@@ -16,6 +16,7 @@
 		CE884CF127DCFF3500513A73 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF027DCFF3500513A73 /* ContactTableViewCell.swift */; };
 		CE884CF327DD000900513A73 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF227DD000900513A73 /* NewContactViewController.swift */; };
 		CE884CF527DD029E00513A73 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF427DD029E00513A73 /* Model.swift */; };
+		CE884CF727DD257700513A73 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE884CF627DD257700513A73 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CE884CF027DCFF3500513A73 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		CE884CF227DD000900513A73 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
 		CE884CF427DD029E00513A73 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE884CF627DD257700513A73 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				CE884CDC27DCF8B500513A73 /* AppDelegate.swift */,
 				CE884CF027DCFF3500513A73 /* ContactTableViewCell.swift */,
+				CE884CF627DD257700513A73 /* StorageManager.swift */,
 				CE884CDE27DCF8B500513A73 /* SceneDelegate.swift */,
 				CE884CE027DCF8B500513A73 /* ContactListViewController.swift */,
 				CE884CF227DD000900513A73 /* NewContactViewController.swift */,
@@ -150,6 +153,7 @@
 				CE884CF127DCFF3500513A73 /* ContactTableViewCell.swift in Sources */,
 				CE884CF327DD000900513A73 /* NewContactViewController.swift in Sources */,
 				CE884CE127DCF8B500513A73 /* ContactListViewController.swift in Sources */,
+				CE884CF727DD257700513A73 /* StorageManager.swift in Sources */,
 				CE884CF527DD029E00513A73 /* Model.swift in Sources */,
 				CE884CDD27DCF8B500513A73 /* AppDelegate.swift in Sources */,
 				CE884CDF27DCF8B500513A73 /* SceneDelegate.swift in Sources */,

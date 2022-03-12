@@ -25,6 +25,7 @@ class NewContactViewController: UIViewController {
     @IBAction func saveButton() {
         
         delegate.saveUser(fullName: fullName)
+        StorageManager.shared.save(value: fullName)
         
         self.navigationController?.popViewController(animated: true)
     }

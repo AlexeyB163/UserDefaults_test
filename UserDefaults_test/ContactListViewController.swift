@@ -16,18 +16,13 @@ class ContactListViewController: UIViewController {
     var contacts:[String] = []
     
     @IBOutlet weak var tableView: UITableView!
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
-        tableView.reloadData()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         tableView.delegate = self
+        contacts = StorageManager.shared.fetchContact()
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,11 +47,20 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            StorageManager.shared.delete(at: indexPath.row)
+            contacts.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
 }
 
 extension ContactListViewController: ContactListDelegate {
     func saveUser(fullName: String) {
         contacts.append(fullName)
+        tableView.reloadData()
     }
     
     
